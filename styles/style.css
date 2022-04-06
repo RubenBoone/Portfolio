@@ -1,0 +1,310 @@
+canvas {
+  overflow: hidden !important;
+}
+
+.noM-top {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMeContainer {
+    flex-direction: column;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  #welcome p:nth-child(2) > * {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  .aboutMeContainer > div:nth-child(1) {
+    margin-right: 0;
+  }
+
+  #internshipDesc {
+    justify-content: center !important;
+    flex-direction: column;
+  }
+}
+
+/**
+  Header-styles
+**/
+
+#welcome {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 42%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#welcome p {
+  font-family: 'Fredoka', sans-serif;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+#welcome p:nth-child(2) {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#welcome p:nth-child(2) > * {
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Fredoka', sans-serif;
+}
+
+#changingText {
+  color: #04bd0a;
+}
+
+#showMore {
+  margin-top: 2rem;
+  width: 5rem;
+  cursor: pointer;
+  animation: upDown 4s ease-in-out infinite;
+}
+/**
+  About Me-styles
+**/
+
+#aboutMe {
+  color: white;
+  margin-top: 100vh;
+}
+
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.aboutMeContainer img {
+  border: #fff 3px solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
+
+.aboutMeContainer > * {
+  margin: 1rem;
+}
+
+.aboutMeContainer > div:nth-child(1) {
+  margin-left: 0;
+}
+
+.experienceContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.experienceCard {
+  background-color: #20232c;
+  text-align: center;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+  border: #fff 3px solid;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.experienceContainer img {
+  width: 50px;
+}
+
+.experienceContainer p {
+  margin-top: 1rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  border: #fff 3px solid;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
+
+.socials > p {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+/**
+  Internschip section
+**/
+
+#internshipDesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#internshipDesc p {
+  padding: 2rem 2rem 2rem 0;
+}
+
+#internshipDesc img {
+  width: 10rem;
+  border: #20232c 3px solid;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
+
+/**
+  Projects section
+**/
+
+#projects img {
+  width: 10rem;
+  align-content: center;
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+#projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all;
+}
+
+#projectsContainer a {
+  text-decoration: none !important;
+}
+
+/* Insperation https://codepen.io/russpate/pen/qRaepv */
+
+.box {
+  cursor: pointer;
+  flex: 1 1 0;
+  align-self: stretch;
+}
+
+.box p {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  align-self: stretch;
+}
+
+.box a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.box a > p:first-child {
+  font-size: 1.5rem;
+  font-display: bold;
+}
+
+.box a > p:last-child {
+  text-decoration: underline;
+}
+#projectsContainer:hover .box {
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(0.98);
+  box-shadow: none;
+}
+#projectsContainer:hover .box:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+#projectsContainer > div {
+  border: 3px #fff solid;
+  margin: 2rem;
+  background-color: #20232c;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
+#projectsContainer p {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.smaller {
+  font-size: 0.8rem !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #20232c;
+  height: 90%;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  border: #fff 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: -7rem;
+  top: 0;
+  margin-left: -60px;
+}
+
+.tooltiptext img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/**
+  Animations
+**/
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+}
+
+@keyframes bitPopUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

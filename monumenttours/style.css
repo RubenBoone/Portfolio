@@ -1,0 +1,29 @@
+.container img {
+  max-width: 100%;
+  border: #fff 3px solid;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+links li {
+  margin-top: 0.5rem;
+}
+
+i {
+  margin-left: 0.2rem;
+}
+
+.center {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
