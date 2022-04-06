@@ -9,12 +9,13 @@
   box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
 
-ul {
+li {
   margin-left: 1rem;
+  margin-top: 0.2rem;
 }
 
-links li {
-  margin-top: 0.5rem;
+.mobLink {
+  margin-left: 0 !important;
 }
 
 i {
