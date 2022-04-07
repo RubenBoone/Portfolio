@@ -28,3 +28,13 @@ i {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
+.repos a{
+  text-decoration: none;
+  cursor: default;
+}
+
+.repos span {
+  text-decoration: underline;
+  cursor: pointer;
+}
