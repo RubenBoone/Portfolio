@@ -49,24 +49,31 @@
     </nav>
     <div class="container">
         <h1>Cartopia</h1>
-        <div>
-            <h2>Description</h2>
-            <p>
-                This project is made for the course Augmented Reality and Mobile App Development. In this course we learned to create
-                mobile apps using Flutter and at the end of the course we learned how to implement Wikitude for Augmented reality
-            </p>
-        </div>
-        <div>
-            <h2>Goal</h2>
-            <p>
-                The goal of this group project is making a augmented reality app that makes use of a least 1 of the 4 flavours of augmented reality and a api.
-                My group decided to take a car theme, you get a card with a car model, if you scan this card with the app you unlock the car in your collection but you can also see a 3D model
-                on your screen on top of the car.
-            </p>
+        <div class="start">
+            <div class="text">
+                <h2>Description</h2>
+                <p>
+                    This project is made for the course Augmented Reality and Mobile App Development. In this course we learned to create
+                    mobile apps using Flutter and at the end of the course we learned how to implement Wikitude for Augmented reality.
+                </p>
+                <h2>Goal</h2>
+                <p>
+                    The goal of this group project is making a augmented reality app that makes use of a least 1 of the 4 flavours of augmented reality and a api.
+                    My group decided to take a car theme, you get a card with a car model, if you scan this card with the app you unlock the car in your collection but you can also see a 3D model
+                    on your screen on top of the car.
+                </p>
+            </div>
+            <div class="center">
+                <figure>
+                    <img src="images/carModel.jpg" alt="Picture of a car model">
+                    <figcaption>Example of a model on a car</figcaption>
+                </figure>
+            </div>
         </div>
         <div>
             <h2>My contributions</h2>
-            <div>
+            <div id="models">
+                <div>
                 <h3>Preparing the models</h3>
                 <p>
                     The app uses 12 car models. We didnt make these model ourselve but looked for free to use models online. 
@@ -76,15 +83,44 @@
                     putting them in the right location and rotate the models so they all are in the perfect spot.
                     The config of wikitude is written in Javascript.
                 </p>
+            </div>
+                <div class="center">
+                    <figure>
+                        <img src="images/CarModel1.png" alt="Picture of a car model">
+                        <figcaption>Example of a model</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="start">
+                <div>
+                <h3>JSON-server</h3>
                 <p>
-                    <img src="images/carModel.jpg" alt="Picture of a car model on a card">
+                    For simplicity in this project and because the main focus
+                    is the app with the augmented reality we just used a simple JSON-server with a local tunnel.
+                    I filled the JSON database with the data we needed. 
+                </p>
+                </div>
+                <div>
+                <h3>Code</h3>
+                <p>
+                    Ofcourse I did some coding of the flutter app aswell. For example the part of the collected cards. Not all the cards
+                    are hard coded. This is with the help from a loop that looks how much cards there are in the database. Then the code looks if
+                    you already scanned the card. If you scanned the card it shows the card, otherwise it shows a card that isn't discovered yet.
                 </p>
             </div>
+            </div>
+        </div>
+        <div>
+            <h2>Conclusion</h2>
             <div>
-                <h3>Implementing Wikitude</h3>
-                <p>
-
-                </p>
+                Augmented reality is a really fun technologie to use in apps. In this project I learned a lot about
+                augmented reality and flutter. Flutter has a lot of diffrent things you can use. If you can think of it,
+                Flutter probably has it in their library. In this project we also used github for version control and it helped us fixing
+                some parts of the code that worked before. Everytime you work with Github in a group pay attention when you push or pull code!
+            </div>
+            <h3>Demonstration</h3>
+            <div class="video">
+                <p><a href="https://www.youtube.com/watch?v=O6awrFwQuBc">Short demonstration of the app on <span>Youtube</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></p>
             </div>
         </div>
     </div>

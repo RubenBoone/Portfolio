@@ -50,17 +50,16 @@
     <div class="container">
         <h1>Monument tours</h1>
         <div id="start">
-            <div>
+            <div class="text">
                 <h2>Description</h2>
                 <p>
                     This group project is made for the course Advanced Programming Topics. 
                     In this course we learned to create Docker images application,
                     using tools like SonarCloud and Selenium and the power of Github actions.
                     We were allowed to choose the theme ourselves.
-                    We choose to make something about tours of all kinds of monuments around the world.
+                    We chose to make something about tours of all kinds of monuments around the world.
+                    As a extra we made a simple webapplication in Angular to show our microservice API.
                 </p>
-            </div>
-            <div>
                 <h2>Goal</h2>
                 <p>
                     Create in a group of 2 students a microservices project. 
@@ -72,12 +71,15 @@
                     upload a .JAR as a artifact and send a dockerimage to Docker hub and use SonarCloud.
                 </p>
             </div>
-            <div class="center">
-                <img src="images/Summary.jpg" alt="visual representation of the structure">
+            <div class="center picture">
+                <figure>
+                    <img src="images/Summary.jpg" alt="visual representation of the structure">
+                    <figcaption>Structure and endpoints of the project</figcaption>
+                </figure>
             </div>
         </div>
         <div>
-            <h2>Example of one of my contributions</h2>
+            <h2>My contributions</h2>
             <div>
                 <h3>Docker and CI/CD</h3>
                 <div id="docker">
@@ -86,26 +88,32 @@
                         The dockerfile pulled a image and made it ready for our application. The CI/CD file was set to run on push, to make use of ubuntu.
                         It also told the image what it needs to use and install, what the sonarcloud token are (using Github secrets) and finally push the image to Docker hub.
                     </p>
-                </div>
-                <div>
                     <div class="center">
-                        <img  src="images/docker.png" alt="Dockerfile">
+                        <figure class="center">
+                            <img  src="images/docker.png" alt="Dockerfile">
+                            <figcaption>Docker file</figcaption>
+                        </figure>
                     </div>
-                    <div  class="center">
+                </div>
+                <div class="center">
+                    <figure class="center">
                         <img src="images/cicd.png" alt="CI/CD file">
-                    </div>
+                        <figcaption>Github workflow file</figcaption>
+                    </figure>
                 </div>
             </div>
             <h3>Writing part of the api</h3>
             <div id="api">
                 <p>
                     This part of the project was simply making a webapi using Springboot. Because we choose to make 3 microservices I
-                    helped writing a bit of the api enpoints.
+                    helped writing a bit of the api enpoints. The code exsists out of a controller containing all the endpoints, 
+                    a model that defines the properties of the subject of the microservice and a repositoy to do calls to de database image.
                 </p>
                 <div class="center">
-                    <p>
+                    <figure class="center">
                         <img src="images/api.png" alt="Piece of code from java">
-                    </p>
+                        <figcaption>Piece of Java code</figcaption>
+                    </figure>
                 </div>
             </div>
             <h3>Kubernetes</h3>
@@ -115,7 +123,10 @@
                 This direcotry contains all the config files for each microservice.
             </p>
             <div class="center">
-                <img src="images/k8s.png" alt="Picture of Kubernetes .yaml file">
+                <figure class="center">
+                    <img src="images/k8s.png" alt="Picture of Kubernetes .yaml file">
+                    <figcaption>Piece of k8s file</figcaption>
+                </figure>
             </div>
         </div>
         <div>
@@ -126,7 +137,7 @@
                 At first this course scared me because of the words Docker and Kubernetes but once you understand how everythig works it is not that hard anymore.
                 In this project I got the chance to increase my experience with Docker, Kubernetes and I learned that Github is not just a version control tool.
             </p>
-            <h3>Repositorys</h3>
+            <h3>Repositories</h3>
             <p class="repos">
                 <a href="https://github.com/RubenBoone/AdvProg-Edge" target="_blank">Check out more information on <span>Github!</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small>
             </p>

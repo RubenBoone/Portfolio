@@ -1,4 +1,27 @@
-.container img {
+h1 {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+
+  #start {
+    flex-wrap: wrap;
+  }
+
+  #docker {
+    flex-wrap: wrap;
+  }
+
+  #docker p {
+    max-width: 100% !important;
+  }
+}
+
+img { 
+  max-width: 100%;
+  margin: 0 !important;
+}
+
+figure {
   max-width: 100%;
   border: #fff 3px solid;
   border-radius: 5px;
@@ -9,13 +32,34 @@
   box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
 
-li {
-  margin-left: 1rem;
-  margin-top: 0.2rem;
+figcaption {
+  margin: 0.5rem;
+  margin-bottom: 0 !important;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
-.mobLink {
-  margin-left: 0 !important;
+#start {
+  display: flex;
+  align-items: center;
+}
+
+#start div {
+  margin: 1rem;
+}
+
+#docker {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#docker * {
+  margin: 1rem;
+}
+
+#docker p {
+  max-width: 50%;
 }
 
 i {
@@ -27,6 +71,7 @@ i {
   align-content: center;
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
 }
 
 .repos a{
@@ -37,4 +82,13 @@ i {
 .repos span {
   text-decoration: underline;
   cursor: pointer;
+  color: #04bd0a;
+}
+
+.text {
+  width: 50%;
+}
+
+.picture {
+  width: 50%
 }
