@@ -224,11 +224,11 @@ footer img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a span {
-  color: #04bd0a;
-  text-decoration: underline;
-  margin-right: 0.2rem;
+  color: #04bd0a !important;
+  text-decoration: underline !important;
+  margin-right: 0.2rem !important;
 }
