@@ -11,6 +11,10 @@ h1 {
         margin-right: 1rem;
     }
 
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
     figure {
         width: 20rem;
     }
@@ -30,9 +34,8 @@ img {
 
 figure {
     margin-top: 0.5rem;
-    min-width: 100%;
     border: #fff 3px solid;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.5em;
     box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
