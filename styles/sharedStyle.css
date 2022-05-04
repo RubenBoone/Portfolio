@@ -222,3 +222,13 @@ footer img {
   width: 1.2rem;
   transform: rotate(180deg);
 }
+
+a {
+  text-decoration: none;
+}
+
+a span {
+  color: #04bd0a;
+  text-decoration: underline;
+  margin-right: 0.2rem;
+}
