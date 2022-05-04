@@ -232,3 +232,7 @@ a span {
   text-decoration: underline !important;
   margin-right: 0.2rem !important;
 }
+
+.bold {
+  font-weight: bold;
+}
