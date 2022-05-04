@@ -15,3 +15,36 @@ a {
 ul {
   margin-left: 1rem;
 }
+
+@media only screen and (min-width: 600px) {
+  .row {
+      display: flex;
+      align-items: center;
+  }
+
+  
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .row div {
+    max-width: 50%;
+  }
+
+  .row div {
+    margin-right: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-top: 1rem;
+  padding: 0.5em;
+  border: #fff 3px solid;
+  border-radius: 5px;
+  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
