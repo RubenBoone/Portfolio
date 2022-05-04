@@ -11,13 +11,13 @@ canvas {
     flex-direction: column;
   }
 
-  canvas {
-    display: none;
+  #welcome {
+    top: 20% !important;
   }
 
   #welcome p:nth-child(2) > * {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
   }
 
   .aboutMeContainer > div:nth-child(1) {
@@ -28,6 +28,8 @@ canvas {
     justify-content: center !important;
     flex-direction: column;
   }
+
+
 }
 
 /**
@@ -250,6 +252,7 @@ canvas {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
+  transition: all ease 0.3s;
 }
 
 .tooltip .tooltiptext {
@@ -264,6 +267,7 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all ease 0.3s;
 
   /* Position the tooltip */
   position: absolute;

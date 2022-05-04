@@ -16,20 +16,15 @@ h1 {
       margin-right: 1rem;
   }
 
-  figure {
-    width: 30rem;
+  .container img {
+    min-width: 30rem;
 }
 }
 
 img {
   max-width: 100%;
-  height: auto;
-}
-
-figure {
   margin-top: 1rem;
-  padding: 0.5em;
-  border: #fff 3px solid;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 10px;
   box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }

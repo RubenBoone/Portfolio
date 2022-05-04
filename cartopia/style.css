@@ -5,37 +5,43 @@ h1 {
 @media only screen and (min-width: 600px) {
     .row {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .row div {
         margin-right: 1rem;
+        min-width: 50%;
+    }
+
+    .noWrap {
+        flex-wrap: nowrap !important;
     }
 
     .reverse {
         flex-direction: row-reverse;
     }
 
-    figure {
-        width: 20rem;
-    }
-
-    #resultPictures > figure {
-        min-width: 30%;
-        margin: 0.5rem;
+    img {
+        width: 80%;
         height: auto;
+        margin: 0.5rem;
     }
 }
 
 img {
     width: 100%;
     height: auto;
-    margin-bottom: 0.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
 
-figure {
-    margin-top: 0.5rem;
-    border: #fff 3px solid;
-    border-radius: 5px;
-    padding: 0.5em;
-    box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+.imgCenter {
+    text-align: center;
+}
+.smallerHeight {
+    width: auto;
+    height: 75vh;
 }

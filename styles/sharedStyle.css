@@ -17,6 +17,7 @@ html {
   font-family: 'League Spartan', sans-serif;
   color: var(--navText);
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .container {
@@ -27,7 +28,7 @@ html {
 }
 
 hr {
-  margin: 5rem;
+  margin: 2.5rem;
   background-color: #fff;
 }
 
@@ -206,11 +207,13 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 footer p {
   margin: 1.5rem;
   font-size: 1.2rem;
+  font-weight: 200;
 }
 
 footer p:last-child {
@@ -221,6 +224,14 @@ footer p:last-child {
 footer img {
   width: 1.2rem;
   transform: rotate(180deg);
+  margin-right: 1rem;
+  box-shadow: none !important;
+}
+
+#backTop {
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
 a {
