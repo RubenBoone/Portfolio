@@ -12,7 +12,7 @@ canvas {
   }
 
   #welcome {
-    top: 35% !important;
+    top: 25vh !important;
   }
 
   #welcome p:nth-child(2) > * {
@@ -147,11 +147,11 @@ canvas {
   cursor: pointer;
 }
 
-.socials a, i {
+.socials a, .socials i {
   transition: all ease 1s;
 }
 
-.socials a:hover, i:hover {
+.socials a:hover, .socials i:hover {
   color: #04bd0a !important;
   transform: scale(1.5);
 }
@@ -159,14 +159,13 @@ canvas {
 /**
   Internschip section
 **/
+#internship p {
+  margin-bottom: 2.5rem;
+}
 
 #internshipDesc {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-#internshipDesc p {
-  padding: 2rem 2rem 2rem 0;
 }
 
 #internshipDesc img {
