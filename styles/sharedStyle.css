@@ -37,10 +37,12 @@ hr {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
+  font-family: 'Lobster', serif
 }
 
-h1, h2 {
+
+h2 {
   color: #04bd0a;
 }
 

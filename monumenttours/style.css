@@ -6,6 +6,7 @@ h1 {
   .row {
       display: flex;
       align-items: center;
+      flex-wrap: nowrap;
   }
 
   .reverse {
@@ -19,6 +20,11 @@ h1 {
   .container img {
     min-width: 30rem;
 }
+}
+
+.row {
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .container img {
