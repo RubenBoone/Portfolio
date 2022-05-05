@@ -45,7 +45,7 @@ footer {
         text-align: center;
     }
 
-    img {
+    .container img {
         margin-top: 2rem;
     }
 }
