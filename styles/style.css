@@ -28,7 +28,9 @@ canvas {
     justify-content: center !important;
     flex-direction: column;
   }
-
+  .tooltip .tooltiptext {
+    display: none !important;
+  }
 
 }
 
