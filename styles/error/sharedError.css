@@ -4,13 +4,14 @@
 
 .container {
     width: 60%;
-    margin-top: 30vh !important;
+    margin-top: 20vh !important;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .bigCode {
@@ -22,6 +23,8 @@
 .container img {
     border-radius: 10px;
     box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -33,4 +36,16 @@ footer {
 .backIcon {
     font-size: 2rem;
     color: #04bd0a;
+}
+
+@media only screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img {
+        margin-top: 2rem;
+    }
 }
