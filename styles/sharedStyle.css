@@ -11,6 +11,10 @@ html {
   scroll-padding-top: 7rem;
 }
 
+section {
+  margin-top: 10rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,10 +40,15 @@ h1 {
   font-size: 2.5rem;
 }
 
+h1, h2 {
+  color: #04bd0a;
+}
+
 h2 {
   font-size: 2rem;
   margin: 2rem 0 1rem 0;
-  border-left: #fff 3px solid;
+  border-left: #04bd0a 3px solid;
+  font-weight: bold;
   padding-left: 1rem;
 }
 
@@ -208,6 +217,7 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 footer p {

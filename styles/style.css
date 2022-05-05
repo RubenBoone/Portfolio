@@ -12,7 +12,7 @@ canvas {
   }
 
   #welcome {
-    top: 20% !important;
+    top: 35% !important;
   }
 
   #welcome p:nth-child(2) > * {
@@ -137,15 +137,23 @@ canvas {
 .socials {
   display: flex;
   justify-content: space-between;
-  border: #fff 3px solid;
+  border-bottom: #fff 3px solid;
   border-radius: 5px;
   margin-top: 1rem;
-  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
 
 .socials > p {
   margin: 0.5rem;
   cursor: pointer;
+}
+
+.socials a, i {
+  transition: all ease 1s;
+}
+
+.socials a:hover, i:hover {
+  color: #04bd0a !important;
+  transform: scale(1.5);
 }
 
 /**
