@@ -35,7 +35,7 @@ $('#toggleMobNav, .mobLink').click(function name() {
 });
 
 $(window).resize(function () {
-  if ($(window).width() > 600) {
+  if ($(window).width() > 1000) {
     $('#mobLinks').addClass('hide');
   } else {
     $('#mobLinks').removeClass('hide');

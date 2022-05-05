@@ -52,7 +52,7 @@ body {
   background-color: var(--backgroundColor);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   #aboutMe {
     margin-top: 100vh;
   }
