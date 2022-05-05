@@ -1,0 +1,36 @@
+.hide {
+    display: none;
+}
+
+.container {
+    width: 60%;
+    margin-top: 30vh !important;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigCode {
+    color: #04bd0a;
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.container img {
+    border-radius: 10px;
+    box-shadow: rgb(36, 34, 34) 3px 3px 7px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.backIcon {
+    font-size: 2rem;
+    color: #04bd0a;
+}

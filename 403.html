@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: Ruben Boone - 403</title>
+    <link rel="stylesheet" href="/styles/sharedStyle.css">
+    <link rel="stylesheet" href="/styles/error/sharedError.css">
+    <link rel="stylesheet" href="/styles/error/error403.css">
 </head>
 <body>
-    <p>ERROR 403</p>
+    <nav class="en">
+        <div id="navbar">
+            <p><a href="#">Ruben</a></p>
+            <ul>
+                <li><a class="hover-underline-animation" href="/#">Home</a></li>
+                <li><a class="hover-underline-animation" href="/#aboutMe">About me</a></li>
+                <li><a class="hover-underline-animation" href="/#internship">Internship</a></li>
+                <li><a class="hover-underline-animation" href="/#projects">Projects</a></li>
+            </ul>
+        </div>
+        <div id="mobNav">
+            <div>
+                <p>
+                    <a href="#">Ruben</a>
+                </p>
+                <p id="toggleMobNav">
+                    <i class="fa-solid fa-bars"></i>
+                </p>
+            </div>
+            <ul id="mobLinks">
+                <li class="mobLink hide"><a href="/#">Home</a></li>
+                <li class="mobLink hide"><a href="/#aboutMe">About me</a></li>
+                <li class="mobLink hide"><a href="/#internship">Internship</a></li>
+                <li class="mobLink hide"><a href="/#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nl">
+        <div id="navbar">
+            <p><a href="/nl/">Ruben</a></p>
+            <ul>
+                <li><a class="hover-underline-animation" href="/nl/#">Hoofdpagina</a></li>
+                <li><a class="hover-underline-animation" href="/nl/#aboutMe">Over mij</a></li>
+                <li><a class="hover-underline-animation" href="/nl/#internship">Stage</a></li>
+                <li><a class="hover-underline-animation" href="/nl/#projects">Projecten</a></li>
+            </ul>
+        </div>
+        <div id="mobNav">
+            <div>
+                <p>
+                    <a href="/nl/">Ruben</a>
+                </p>
+                <p id="toggleMobNav">
+                    <i class="fa-solid fa-bars"></i>
+                </p>
+            </div>
+            <ul id="mobLinks">
+                <li class="mobLink hide"><a href="/nl/#">Hoofdpagina</a></li>
+                <li class="mobLink hide"><a href="/nl/#aboutMe">Over mij</a></li>
+                <li class="mobLink hide"><a href="/nl/#internship">Stage</a></li>
+                <li class="mobLink hide"><a href="/nl/#projects">Projecten</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1>ERROR <span class="bigCode">403</span></h1>
+                <p class="en"><a href="/">lets go back <span>back</span>...</a></p>
+                <p class="nl"><a href="/">laten we <span>terug</span> gaan...</a></p>         
+            </div>
+            <div>
+                <p>
+                    <img src="/images/403img.jpg" width="500" alt="Nothing to see here but there are explosions">
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; Ruben Boone - 2022
+        </p>
+        <p id="backTop">
+            <a href="#" title="Naar boven"><img src="/images/arrow.png" alt="Back to top"></a>
+        </p>
+    </footer>
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script>
+
+if(navigator.language.includes('en')){
+    $('.nl').addClass("hide");
+} else {
+    $('.en').addClass("hide");
+}
+    
+</script>
