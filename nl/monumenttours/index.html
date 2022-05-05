@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ruben Boone - Monument Tours</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Portfolio: Ruben</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=League+Spartan:wght@400&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/monumenttours/style.css">
+    <link rel="stylesheet" href="/styles/sharedStyle.css">
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <p><a href="/">Ruben</a></p>
+            <ul>
+                <li><a class="hover-underline-animation" href="/nl/">Hoofdpagina</a></li>
+                <li><a class="hover-underline-animation" href="/nl/#aboutMe">Over Mij</a></li>
+                <li><a class="hover-underline-animation" href="/nl/#internship">Stage</a></li>
+                <li><a class="hover-underline-animation" href="/nl/#projects">Projecten</a></li>
+                <li><a class="hover-underline-animation" href="/monumenttours/"><img width="32" src="/images/flagEN.png" alt="Naar engels"></a></li>
+            </ul>
+        </div>
+        <div id="mobNav">
+            <div>
+                <p>
+                    <a href="#">Ruben</a>
+                </p>
+                <p id="toggleMobNav">
+                    <i class="fa-solid fa-bars"></i>
+                </p>
+            </div>
+            <ul id="mobLinks">
+                <li class="mobLink hide"><a href="/nl/">Hoofdpagina</a></li>
+                <li class="mobLink hide"><a href="/nl/#aboutMe">Over mij</a></li>
+                <li class="mobLink hide"><a href="/nl/#internship">Stage</a></li>
+                <li class="mobLink hide"><a href="/nl/#projects">Projecten</a></li>
+                <li class="mobLink hide"><a href="/monumenttours/"><img width="32" src="/images/flagEN.png" alt="Naar engels"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Monument tours</h1>
+        <div class="row">
+            <div>
+                <h2>Beschrijving</h2>
+                <p>
+                    Dit project is gemaakt voor het opleidingsonderdeel Advanced Programming Topics.
+                    Hier leerde we om Docker containers te maken met applicaties in plaats van bv. een .JAR bestand,
+                    toepassingen zoals SonarCloud, Selenium en Github Actions te gebruiken.
+                    Samen in team hebben we besloten om als onderwerp verschillende rondleidingen van verschillende monumenten uit te wereld
+                    te gebruiken.
+                </p>
+                <h2>Doel</h2>
+                <p>
+                    Maak een microservice project dat minstens 2 microservices en een edge service bevat.
+                    De applicatie moet MongoDB en een andere niet MySQL database gebruiken. Elke microservice heeft een minimum of GET, POST, PUT en DELETE calls.
+                    Er moest ook unit en integratie testen voorzien worden. CI/CD deployment zou deze testen moeten uitvoerden. De .JAR zou als artifact naar een docker image
+                    op docker hub gestuurd moeten worden. SonarCloud moest toegevoegd worden aan de CI/CD.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <img src="/monumenttours/images/Summary.jpg" alt="visual representatie van het projectstructuur">
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>Mijn toevoegingen</h2>
+            <div class="row">
+                <div>
+                    <h3>Docker en CI/CD</h3>
+                        <p>
+                            Ik heb de dockerfile en pipeline die gebruikt word door Github actions voor elke microservice voorzien.
+                            De dockerfile pakte een image en maakte deze klaar voor onze java applicatie. De CI/CD was ingesteld om uitgevoerd te worden bij elke Github push op een ubuntu machine.
+                            Hier word ook verteld welke extra paketten het systeem moet instaleren, wat onze sonarcloud en github tokens waren via Github secrets. Tot slot werd de container naat Docker hub gestuurd
+                        </p>
+                </div>
+                <div>
+                    <p>
+                        <img src="/monumenttours/images/cicd.png" alt="CI/CD bestand">
+                    </p>
+                </div>
+            </div>
+            <div class="row reverse">
+                <div>
+                    <h3>Schrijven van de API</h3>
+                    <p>
+                        Dit deel van het project was in Java een API schrijven met Springboot. Omdat we ervoor gekozen hebben om 3 microservices
+                        te maken heb ik geholpen met het schrijven van de endpoints. De code bevat een controller waar al deze endpoints zitten.
+                        Er is ook een model aanwezig waar alle properties van de objecten aanwezig zijn en een repository met alle calls naar een database.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <img src="/monumenttours/images/api.png" alt="Stukje Java code">
+                    </p>
+                </div>
+            </div>
+        <div class="row">
+            <div>
+                <h3>Kubernetes</h3>
+                <p>
+                    Het toffe aan het gebruiken van microservices is dat je Kubernetes kan gebruiken. Als 1 deeltje van de applicatie heel veel verkeer krijgt kan deze
+                    makkelijk uitgebreid worden zodat de belasting verdeeld kan worden.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <img src="/monumenttours/images/k8s.png" alt="Stukje .yaml bestand van kubernetes">
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>Bevindingen</h2>
+            <p>
+                Maken van Docker containers en microservices is erg handig. Op deze manier kan je applicatie op eender welke machine gestart worden zonder extra
+                paketten te moeten instaleren omdat deze automatisch mee geinstaleerd worden. Hierdoor kan er ook zeer simpel uitgebreid worden als de applicatie veel
+                verkeer ontvangt. In het begin leek Docker en Kubernetes heel moeilijk maar uitendelijk viel die heel erg mee. Mijn Docker en Github skills zijn door dit
+                project erg gestegen
+            </p>
+            <h3>Repositories</h3>
+            <p>
+                <a href="https://github.com/RubenBoone/AdvProg-Edge" target="_blank" referrerpolicy="no-referrer">Voor meer informatie over dit project neem je best een kijkje op <span>Github!</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small>
+            </p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>
+            &copy; Ruben Boone - 2022
+        </p>
+        <p id="backTop">
+            <a href="#" title="Naar boven"><img src="/images/arrow.png" alt="Terug naar boven"></a>
+        </p>
+    </footer>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/main.js"></script>

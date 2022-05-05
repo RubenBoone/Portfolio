@@ -7,12 +7,12 @@ h1 {
   text-align: center;
 }
 
-a {
+.container a {
   color: #04bd0a;
   margin-right: 0.1rem;
 }
 
-ul {
+.container ul {
   margin-left: 1rem;
 }
 
@@ -36,7 +36,7 @@ ul {
   }
 }
 
-img {
+.container img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;

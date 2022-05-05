@@ -23,14 +23,20 @@ h1 {
         flex-direction: row-reverse;
     }
 
-    img {
+    .container img {
         width: 80%;
         height: auto;
         margin: 0.5rem;
     }
 }
 
-img {
+.smallerImg {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 1rem;
+}
+
+.contianer img {
     width: 100%;
     height: auto;
     margin: 1rem;
@@ -38,10 +44,10 @@ img {
     box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
 
-.imgCenter {
+.container .imgCenter {
     text-align: center;
 }
-.smallerHeight {
+.container .smallerHeight {
     width: auto;
     height: 75vh;
 }
