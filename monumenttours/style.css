@@ -6,7 +6,7 @@ h1 {
   .row {
       display: flex;
       align-items: center;
-      flex-wrap: nowrap;
+      flex-wrap: nowrap !important;
   }
 
   .reverse {
