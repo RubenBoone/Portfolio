@@ -4,7 +4,8 @@
 
 .container {
     width: 60%;
-    margin-top: 10vh !important;
+    margin-top: 30vh !important;
+    text-align: right;
 }
 
 .row {
@@ -47,5 +48,8 @@ footer {
 
     .container img {
         margin-top: 2rem;
+    }
+    .container {
+        margin-top: 20vh !important;
     }
 }
