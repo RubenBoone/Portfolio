@@ -31,9 +31,26 @@ section {
   margin-bottom: 2rem !important;
 }
 
-hr {
-  margin: 2.5rem;
-  background-color: #fff;
+.languageText {
+  position: relative;
+  display: inline-block;
+}
+
+#languageTip {
+  transition: all 2s;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1rem 0;
+  border-bottom: solid 5px #fff;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
 }
 
 h1 {
@@ -147,6 +164,7 @@ body {
   color: var(--navText);
   transition: 1s;
   z-index: 99;
+  align-items: center;
   text-align: center;
 }
 
@@ -158,6 +176,10 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+}
+
+nav ul #navbar {
+  align-items: center;
 }
 
 nav p,

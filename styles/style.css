@@ -57,6 +57,20 @@ td:first-child {
 
 }
 
+#hint {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  font-family: 'Fredoka', sans-serif;
+}
+
+#hint img {
+  transform: rotate(180deg);
+}
+
 /**
   Header-styles
 **/
