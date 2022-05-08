@@ -6,7 +6,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById('navbar').style.background = '#080a10';
     document.getElementById('mobNav').style.background = '#080a10';
-    $('#languageTip').fadeOut(1000);
+    $('#languageTip').addClass('fadeOut');
   } else {
     if (!open) {
       document.getElementById('navbar').style.background = 'none';
