@@ -370,8 +370,12 @@ td:first-child {
   }
 }
 
+#languageTip {
+  animation: upDown 4s ease-in-out infinite;
+}
+
 .fadeOut {
-  animation: fadeOut 2s forwards;
+  animation: fadeOut 2s forwards, upDown 4s ease-in-out infinite !important;
 }
 
 .col {
