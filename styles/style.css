@@ -1,5 +1,5 @@
-canvas {
-  overflow: hidden !important;
+html {
+  min-height: -webkit-fill-available;
 }
 
 .noM-top {
@@ -76,13 +76,16 @@ td:first-child {
 **/
 
 #welcome {
-  position: absolute;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   top: 42%;
   left: 0;
   right: 0;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #welcome p {
@@ -120,7 +123,6 @@ td:first-child {
 
 #aboutMe {
   color: white;
-  margin-top: 100vh;
 }
 
 .aboutMeContainer {

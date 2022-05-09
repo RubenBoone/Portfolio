@@ -81,10 +81,6 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-  #aboutMe {
-    margin-top: 100vh;
-  }
-
   #navbar {
     display: none !important;
   }
