@@ -206,20 +206,6 @@ td {  padding-bottom: 0.5rem;}
   margin-bottom: 2.5rem;
 }
 
-#internshipDesc {
-  display: flex;
-  align-items: center;
-}
-
-#internshipDesc img {
-  width: 10rem;
-  border: #20232c 3px solid;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 25px;
-  box-shadow: rgb(36, 34, 34) 3px 3px 7px;
-}
-
 /**
   Projects section
 **/
