@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=League+Spartan:wght@400&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/qiosk/style.css">
     <link rel="stylesheet" href="/styles/sharedStyle.css">
 </head>
 <body>
@@ -23,28 +23,27 @@
         <div id="navbar">
             <p><a href="/">Ruben</a></p>
             <ul>
-                <li><a class="hover-underline-animation" href="#">Home</a></li>
-                <li><a class="hover-underline-animation" href="#aboutMe">About me</a></li>
-                <li><a class="hover-underline-animation" href="#internship">Internship</a></li>
-                <li><a class="hover-underline-animation" href="#projects">Projects</a></li>
-                <li><a class="hover-underline-animation" href="/nl/qiosk/"><img width="32" src="/images/flagNL.png" alt="To dutch"></a></li>
-            </ul>
+                <li><a class="hover-underline-animation" href="/#">Hoofdpagina</a></li>
+                <li><a class="hover-underline-animation" href="/#aboutMe">Over mij</a></li>
+                <li><a class="hover-underline-animation" href="/#internship">Stage</a></li>
+                <li><a class="hover-underline-animation" href="/#projects">Projecten</a></li>
+                <!-- <li><a class="hover-underline-animation" href="/qiosk/"><img width="32" src="/images/flagEN.png" alt="Naar engels"></a></li>            </ul> -->
         </div>
         <div id="mobNav">
             <div>
                 <p>
-                    <a href="/#">Ruben</a>
+                    <a href="/">Ruben</a>
                 </p>
                 <p id="toggleMobNav">
                     <i class="fa-solid fa-bars"></i>
                 </p>
             </div>
             <ul id="mobLinks">
-                <li class="mobLink hide"><a href="/#">Home</a></li>
-                <li class="mobLink hide"><a href="/#aboutMe">About me</a></li>
-                <li class="mobLink hide"><a href="/#internship">Internship</a></li>
-                <li class="mobLink hide"><a href="/#projects">Projects</a></li>
-                <li class="mobLink hide"><a href="/nl/qiosk/">Verander de taal naar: <img width="32" src="/images/flagEN.png" alt="To dutch"></a></li>
+                <li class="mobLink hide"><a href="/">Hoofdpagina</a></li>
+                <li class="mobLink hide"><a href="/#aboutMe">Over mij</a></li>
+                <li class="mobLink hide"><a href="/#internship">Stage</a></li>
+                <li class="mobLink hide"><a href="/#projects">Projecten</a></li>
+                <!-- <li class="mobLink hide"><a href="/qiosk/">Change language to: <img width="32" src="/images/flagEN.png" alt="Naar engels"></a></li> -->
             </ul>
         </div>
     </nav>
@@ -53,91 +52,94 @@
         <h1>Qiosk</h1>
         <div>
             <div>
-                <h2>Description</h2>
+                <h2>Beschrijving</h2>
                 <p>
-                    Qiosk is the name of the group that made this project real.
-                    Together with a team of 6 (3 application developer students, 1 internet of things student,
-                    1 artificial intelligence student and a cloud and cybersecurity student) we got the challenge to
-                    create a project for <a target="_blank" href="https://www.vanroey.be/studenten-thomas-more-visualiseren-bezoekers-experience-center/" referrerpolicy="no-referrer">the external company <span>"Vanroey.be"</span><small></a><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small>. The challenge was inside position tracking of a person in a room and
-                    track how long they stayed at a specific informational stand. The what and how was totally up to us.
-                </p>
+          Qiosk is de naam of het team dat dit project gemaakt heeft.
+          Samen met een groep van zes (drie applicatieontwikkelaar studenten, één IOT-student, één AI-student en één CCS-student) hebben we de uitdaging
+          gekregen van <a target="_blank" href="https://www.vanroey.be/studenten-thomas-more-visualiseren-bezoekers-experience-center/" referrerpolicy="no-referrer"> het extern bedrijf
+                    <span>"Vanroey.be"</span><small></a><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small>.
+          De uitdaging was om een persoon te traceren en te kijken hoe lang de persoon bij verschillende standjes stond. Het hoe en wat was helemaal aan ons om uit te zoeken.
+        </p>
             </div>
-            <h2>Goals</h2>
+            <h2>Doel</h2>
             <div class="row">
                 <div>
-                    <h3>Must haves:</h3>
+                <h3>Moet hebben:</h3>
           <ul>
-            <li>Make something track the person in the room.</li>
-            <li>Make it possible to see the data afterwards.</li>
-            <li>Make a panel where you can configure things if needed.</li>
+            <li>Maak iets wat de persoon kan volgen</li>
+            <li>Zorg ervoor dat de data makkelijk bekeken kan worden.</li>
+            <li>Maak een beheerders paneel waar alles beheerd kan worden indien nodig</li>
           </ul>
         </div>
         <div>
-          <h3>Nice to have:</h3>
+          <h3>Extra's:</h3>
           <ul>
-            <li>Full use of Microsoft tools like azure.</li>
-            <li>As little interaction from the visitor as possible.</li>
+            <li>Volledig gebruik van Microsoft-toepassingen</li>
+            <li>Zo weinig mogelijk interactie met de klant</li>
           </ul>
-                </div>
+        </div>
             </div>
         </div>
         <div>
-            <h2>The start</h2>
-            <p>
-        At the start of the year, we got all the information we needed to start. The first step is figuring
-        out what to do and how to do it. So we did a lot of research, communicated with the customer and made a lot of choices. At the end we decided to make an Angular web-application where visitors can book a visit with their
-        company. On the same application, a place for the admin panel. As an extra, we planned to make a mobile app where you can
-        see details about your visit. For the tracking, we decided to use ultra-wideband. All the collected Data would be visible trough
-        Qlik sense dashboards. We would host our application (and that includes our database) on an Azure VM.
+            <h2>Het Begin</h2>
+      <p>
+        Tijdens de start van het jaar kregen we alle informatie die we nodig hadden voor dit project. De eerste stap
+        was uitzoeken wat er moest voorzien worden, wat er gebruikt gaat worden. We hebben veel onderzoek gedaan, gecommuniceerd met de opdrachtgever en
+        veel beslissingen genomen. Uiteindelijk hebben we besloten om een Angular webapplicatie te maken waar bezoekers hun bezoek kunnen plannen
+        en de Beheerders de configuratie kunnen raadplegen. Als extraatje hebben we 1 mobiele app voorzien voor zowel de beheerders als de bezoeker.
+        Op deze app kan een bezoeker een grondplan zien, en uiteindelijk de tijdsverdeling van alle standjes die er bezocht zijn bekijken. De beheerders
+        kunnen via de app een nieuwe locatie voor een standje toevoegen. Voor de tracking hebben we gekozen om ultra-wideband te gebruiken. Alle verzamelde data
+        worden zichtbaar gemaakt via Qlik Sense. Alles wordt gehost op een Azure VM
       </p>
         </div>
     </section>
     <section>
         <div>
-            <h2>My contributions</h2>
+            <h2>Mijn Toevoegingen</h2>
             <div class="row">
                 <div>
                     <h3>App & Web-app</h3>
-          <p>
-            I helped make a lot of final decisions on the application development part. I started on the angular application, but at the end the
-            Flutter app needed some more attention, so I transferred without any issues to the development of the app. There I made it possible
-            to see the time divided at all the visited stands with a summary of progress bars. I fixed some bugs that were created when logging in. To finalize the
-            app we added a functionality, so the admins could create a new stand dynamically using the app. To finish, I implemented Sonar cloud on all our Repositories
-            so we had a good sight on code smells, bad code and security issues.
-          </p>
+         <p>
+           Ik heb geholpen om veel eindbeslissingen te maken op vlak van de applicatieontwikkeling. Zo ben ik begonnen aan de Angular applicatie, maar ben tussentijds
+            gewisseld naar de mobiele applicatie omdat deze iets meer aandacht vroeg. De communicatie tijdens deze overgang met de andere student liep zonder problemen.
+           In de app heb ik voorzien dat er een overzicht was met alle bezochte standjes en hoelang van de totale tijd de persoon erbij gestaan heeft. Een overzicht met alle standjes en
+           voor de beheerders de mogelijkheid om een nieuwe locatie in te stellen. Tot slot heb ik SonarCloud toegevoegd aan onze GitHub repo's om "bad code" en "security risks" makkelijk
+            te kunnen detecteren en oplossen.
+         </p>
                 </div>
                 <div>
                     <p>
-                        <img src="images/timeprogress.png" alt="Preview app">
+                        <img src="/qiosk/images/timeprogress.png" alt="Preview app">
                     </p>
                 </div>
             </div>
         <div class="row reverse">
             <div>
                 <h3>Internet of things</h3>
-        <p>
-          At some point, our IOT-specialist ran in some problems. We had no clue on how to detect if one of our visitor tags was
-          inside a booth zone. I quickly jumped in and provided a Python script that helped him out. They changed the script to work
-          better with the ultra-wideband. But the core to detect if the tag was in a zone still exists. The script used Pythagoras to see if the tag was in a circle radius.
-        </p>
-      </div>
-      <div>
-        <p>
-          <img src="images/pythonScript.png" alt="python script">
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div>
-      <h3>Hosting</h3>
-      <p>
-        Even though I'm not a specialist on the hosting part. I felt like I was pretty useful with our Cloud and cybersecurity student by
-        communicating the things we need and are important for him to remind. Things went pretty smooth and were very clear to the both of us.
-      </p>
-        </div>
+                <p>
+                    Op een gegeven moment zat onze IOT-specialist een beetje vast. Er was geen idee hoe we nu juist gingen zien of een persoon in de locatie van een standje stond.
+                    Op dit moment heb ik ingesprongen en is er een Python script opgesteld. Samen met de IOT-er is het script samengekomen in zijn script voor de tracking.
+                    Het scriptje gebruikt Pythagoras om te kijken of een specifiek punt in een cirkel zit.
+                </p>
+            </div>
             <div>
                 <p>
-                    <img src="images/sonarcloud.png" alt="sonarcloud">
+                    <img src="/qiosk/images/pythonScript.png" alt="python script">
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+            <h3>Hosting</h3>
+            <p>
+        Ik ben totaal geen expert op het vlak van de hosting. Ondanks de weinige kennis heb ik toch wel het gevoel dat de CCS-student de communicatie die
+        ik aanbood heel erg waardeerde. Zo waren er geen problemen met benodigde pakketten die extra geïnstalleerd moesten worden. Alles ging hier door goede
+        communicatie erg vlot voor beide partijen.
+            </p>
+            </div>
+            <div>
+                <p>
+                    <img src="/qiosk/images/sonarcloud.png" alt="sonarcloud">
                 </p>
             </div>
         </div>
@@ -146,10 +148,10 @@
         <div>
             <h2>Links</h2>
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=dUP7Fs7NELc" referrerpolicy="no-referrer">Link to a demonstration on <span>Youtube</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
-                <li><a href="https://github.com/RubenBoone/Qiosk-webapp" referrerpolicy="no-referrer">Link to frontend repository on <span>Github</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
-                <li><a href="https://github.com/RubenBoone/Qiosk-Backend" referrerpolicy="no-referrer">Link to backend repository on <span>Github</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
-                <li><a href="https://github.com/RubenBoone/Qiosk-MobileApp" referrerpolicy="no-referrer">Link to mobile app repository on <span>Github</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
+                <li><a href="https://www.youtube.com/watch?v=dUP7Fs7NELc" referrerpolicy="no-referrer">Bekijk het korte demofilmpje op <span>Youtube</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
+                <li><a href="https://github.com/RubenBoone/Qiosk-webapp" referrerpolicy="no-referrer">Bekijk de web applicatie op <span>Github</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
+                <li><a href="https://github.com/RubenBoone/Qiosk-Backend" referrerpolicy="no-referrer">Bekijk de database op <span>Github</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
+                <li><a href="https://github.com/RubenBoone/Qiosk-MobileApp" referrerpolicy="no-referrer">Bekijk de mobiele applicatie op <span>Github</span></a><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></li>
             </ul>
         </div>
     </div>
@@ -158,7 +160,7 @@
             &copy; Ruben Boone - 2022
         </p>
         <p id="backTop">
-            <a href="#" title="Back to top"><img src="/images/arrow.png" alt="Back to top"></a>
+            <a href="#" title="Naar boven"><img src="/images/arrow.png" alt="Terugnaar boven"></a>
         </p>
     </footer>
 </body>
