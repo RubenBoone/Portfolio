@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ruben Boone - MinecraftGL</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Portfolio: Ruben</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=League+Spartan:wght@400&family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="/minecraftgl/style.css">
+        <link rel="stylesheet" href="/styles/sharedStyle.css">
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <p><a href="/">Ruben</a></p>
+            <ul>
+                <li><a class="hover-underline-animation" href="/">Hoofdpagina</a></li>
+                <li><a class="hover-underline-animation" href="/#aboutMe">Over mij</a></li>
+                <li><a class="hover-underline-animation" href="/#internship">Stage</a></li>
+                <li><a class="hover-underline-animation" href="/#projects">Projecten</a></li>
+                <!-- <li><a class="hover-underline-animation" href="/cartopia/"><img width="32" src="/images/flagEN.png" alt="Naar engels"></a></li> -->
+            </ul>
+        </div>
+        <div id="mobNav">
+            <div>
+                <p>
+                    <a href="/">Ruben</a>
+                </p>
+                <p id="toggleMobNav">
+                    <i class="fa-solid fa-bars"></i>
+                </p>
+            </div>
+            <ul id="mobLinks">
+                <li class="mobLink hide"><a href="/">Hoofdpagina</a></li>
+                <li class="mobLink hide"><a href="/#aboutMe">Over mij</a></li>
+                <li class="mobLink hide"><a href="/#internship">Stage</a></li>
+                <li class="mobLink hide"><a href="/#projects">Projecten</a></li>
+                <!-- <li class="mobLink hide"><a href="/cartopia/">Change language to: <img width="32" src="/images/flagEN.png" alt="Naar engels"></a></li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section>
+            <h1>MinecraftGL</h1>
+                <div class="row">
+                    <div>
+                        <h2>Beschrijving</h2>
+                        <p>
+                            Dit groeps project is gemaakt voor het opleidingsonderdeel Computer Graphics. In dit opleidingsonderdeel hebben we geleerd hoe er grafische
+                            applicaties gemaakt kunnen worden en hoe we met OpenGL moeten werken?
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Doel</h2>
+                        <p>
+                            Het doel van dit project was het maken van een 3D doolhof waar je verschillende extras
+                            bij moest maken. Zo is er gebruik gemaakt van instancing, de optie op te kunnen springen, geluid
+                        </p>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div>
+                <div class="row noWrap">
+                    <div>
+                        <h2>Mijn toevoegingen</h2>
+                        <div>
+                            <h3>Instancing</h3>
+                            <p>
+                                In plaats van voor elke blok een positie te onthouden, zeggen we tegen de shader dat hij dit object op coordinaat x en y moet zetten.
+                                Zo moet de computer veel minder data onthouden en sparen we een hoop werk uit. In de afbeelding geven we dus met "Offset" aan waar de blok getekend moet worden.
+                            </p>
+                            <h3>Picking</h3>
+                            <p>
+                                In het doolhof zijn verschillende fakkels geplaatst, een speler kan naar deze fakkels gaan en deze aan teken of terug uit doen.
+                                hier word gebruik gemaakt van color picking, elke fakkel heeft achterliggend een kleur gekregen waardoor als de speler er met de muis
+                                op staat en op de knop klikt, er achterliggend een associatie gebeurd metde juiste kleur.
+                                de fakkel gaat nu aan en er word een licht puntje aan gezet op de locatie van de fakkel.
+                            </p>
+                            <p>
+                                Ik heb nog meer toegedragen aan dit project, je kan de github repo vinden onderaan deze pagina.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="imgCenter">
+                        <img src="/minecraftgl/images/instancing.png" alt="code voor instancing">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Bevindingen</h2>
+                <p>
+                    OpenGL en alle andere gebruikte libraries maken het heel makkelijk om 3D applicaties te maken.
+                    Tijdens dit project heb ik oo kde kans gehad om C++ bij te leren omdat er niet heel veel kennis bij was.
+                </p>
+                <h2>Demonstatie</h2>
+                <div>
+                    <p><a href="https://github.com/RubenBoone/Project_OpenGL" target="_blank" referrerpolicy="no-referrer">De code staat op <span>GitHub</span><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small>, deze repo is geforked van het school account.</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=r6Qgg9tEeas" target="_blank" referrerpolicy="no-referrer">Een demofilmpje op <span>Youtube</span><small><i class="fa-2xs fa-solid fa-up-right-from-square"></i></small></a></p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>
+            &copy; Ruben Boone - 2022
+        </p>
+        <p id="backTop">
+            <a href="#" title="Back to top"><img src="/images/arrow.png" alt="Back to top"></a>
+        </p>
+    </footer>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
