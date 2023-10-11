@@ -39,7 +39,7 @@ h1 {
 .container img {
     width: 100%;
     height: auto;
-    margin: 1rem;
+    margin-top: 1.5rem;
     border-radius: 10px;
     box-shadow: rgb(36, 34, 34) 3px 3px 7px;
 }
