@@ -1,0 +1,26 @@
+---
+import Table from "./Table.astro";
+
+const projectItems = [
+    {
+        year: "Master Thesis",
+        title: "Moralpersona Sandbox: a Testbed for Persona-Conditioned Moral Reasoning in LLMS",
+        affiliation: "Supervisors: Prof. dr. Kris Luyten, Gilles Eerlings",
+        city: "Read",
+        description: "Evaluation platform for Big Five persona-conditioned LLMs",
+        url: "docs/master_thesis.pdf"
+    },
+    {
+        year: "Human-AI",
+        title: "AI-FROSEN",
+        affiliation: "",
+        city: "View demo",
+        description: "A smart assistant which explains and creates rules for an OpenBSD Firewall configuration",
+        url: "https://www.youtube.com/watch?v=kV1lzW5pI8A"
+    },
+]
+---
+<div class="container mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold"><span class="text-gray-600 font-normal">05 / </span> Projects</h2>
+    <Table tableItems={projectItems}/>
+</div>

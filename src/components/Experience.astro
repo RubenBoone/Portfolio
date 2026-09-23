@@ -1,0 +1,32 @@
+---
+import Table from "./Table.astro";
+
+const experienceItems = [
+    {
+        year: "Aug 2025 - Present",
+        title: "Researcher",
+        affiliation: "Digital Future Lab @ Hasselt University",
+        city: "Diepenbeek",
+        description: "Researching HCI topics on multiple projects."
+    },
+    {
+        year: "July 2025",
+        title: "Student",
+        affiliation: "Hospital Geel",
+        city: "Geel",
+        description: "Mapped physical network infrastructure and Ethernet port topology across campus facilities and server rooms."
+    },
+    {
+        year: "February 2025 - June 2025",
+        title: "Internship",
+        affiliation: "Hospital Geel",
+        city: "Geel",
+        description: "Developed in-house software tools to streamline internal hospital workflows."
+    },
+]
+---
+<div class="container mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold"><span class="text-gray-600 font-normal">03 / </span> Experience</h2>
+
+    <Table tableItems={experienceItems}/>
+</div>

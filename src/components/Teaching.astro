@@ -1,0 +1,19 @@
+---
+import Table from "./Table.astro";
+
+const teachingItems = [
+    {
+        year: "2026",
+        title: "Software Engineering",
+        affiliation: "3rd Year Bachelor",
+        city: "9011",
+        description: "Requirements engineering - Process modeling - Agile - Test-driven - UML",
+        url: "https://studiegidswww.uhasselt.be/opleidingsonderdeel.aspx?a=2026&i=9011&n=4&t=01"
+    },
+]
+
+---
+<div class="container mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold"><span class="text-gray-600 font-normal">04 / </span> Teaching</h2>
+    <Table tableItems={teachingItems}/>
+</div>

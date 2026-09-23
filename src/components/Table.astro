@@ -1,0 +1,11 @@
+---
+import TableItem from "./TableItem.astro";
+
+const { tableItems } = Astro.props;
+---
+
+<section class="flex flex-col gap-6">
+    {tableItems.map((item) => (
+            <TableItem {...item} />
+    ))}
+</section>
